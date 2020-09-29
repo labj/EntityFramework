@@ -1,0 +1,55 @@
+﻿@model EntityFramework.Models.CourseVM
+
+@{
+    ViewData["Title"] = "Query";
+}
+
+<h1>Query</h1>
+
+<div>
+    <h4>CourseVM</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseTeacher)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CourseTeacher)
+        </dd>
+        @foreach (var item in Model.CourseStudents)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CourseStudents)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => item.Name)
+            </dd>
+        }
+        @foreach (var item in Model.CourseAssignments)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CourseAssignments)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => item.Title)
+            </dd>
+        }
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

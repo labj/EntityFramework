@@ -9,6 +9,13 @@ using Microsoft.Extensions.Logging;
 
 namespace EntityFramework
 {
+    /*
+     * Tror progammet har den funktionalitet som efterfrågas men det är inte alla
+     * länkar som fungerar. Jag lägger dock ingen mer tid på detta nu utan försöker
+     * komma vidare istället.
+     * 
+     */
+
     public class Program
     {
         public static void Main(string[] args)

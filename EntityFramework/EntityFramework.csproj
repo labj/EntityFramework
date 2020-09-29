@@ -4,4 +4,51 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20200908122340_FirstTry.cs" />
+    <Compile Remove="Migrations\20200908122340_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200908135926_FirstTry.cs" />
+    <Compile Remove="Migrations\20200908135926_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200910172349_FirstTry.cs" />
+    <Compile Remove="Migrations\20200910172349_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200911082654_FirstTime.cs" />
+    <Compile Remove="Migrations\20200911082654_FirstTime.Designer.cs" />
+    <Compile Remove="Migrations\20200912141715_FirstTry.cs" />
+    <Compile Remove="Migrations\20200912141715_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200912173551_FirstTry.cs" />
+    <Compile Remove="Migrations\20200912173551_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200912222519_FirstTry.cs" />
+    <Compile Remove="Migrations\20200912222519_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200912223259_FirstTry.cs" />
+    <Compile Remove="Migrations\20200912223259_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200913172352_FirstTry.cs" />
+    <Compile Remove="Migrations\20200913172352_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200917075745_FirstTry.cs" />
+    <Compile Remove="Migrations\20200917075745_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200927193245_FirstTry.cs" />
+    <Compile Remove="Migrations\20200927193245_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200928122048_FirstTry.cs" />
+    <Compile Remove="Migrations\20200928122048_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200928142643_FirstTry.cs" />
+    <Compile Remove="Migrations\20200928142643_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200928155117_FirstTry.cs" />
+    <Compile Remove="Migrations\20200928155117_FirstTry.Designer.cs" />
+    <Compile Remove="Migrations\20200929130945_FirstTry.cs" />
+    <Compile Remove="Migrations\20200929130945_FirstTry.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>
